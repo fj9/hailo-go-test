@@ -9,7 +9,7 @@ package main
 import (
 	"math/rand"
 	"fmt"
-	"log"
+//	"log"
 )
 
 type Robot struct {
@@ -36,7 +36,7 @@ func (r *Robot) Consume(locations []RobotLocation, trafficConditions chan string
 
 func CalculateSpeed(location1, location2 RobotLocation) float64 {
 	distance := Distance(location1.Point, location2.Point)
-	//	log.Printf("Distance %f", distance)
+//		log.Printf("Distance %f", distance)
 
 	durationSec := location2.Time.Sub(location1.Time).Seconds()
 
